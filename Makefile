@@ -1,10 +1,12 @@
- NAME = libftprintf.a
+NAME = libftprintf.a
 
- SRC_F = ft_putchar.c ft_puthex.c ft_putnbr.c ft_putstr.c ft_unsigned_putnbr.c  
- OBJ_S = (SRC_F=.c:.o)
+SRC_F = ft_putchar.c ft_puthex.c ft_putnbr.c ft_putstr.c ft_unsigned_putnbr.c  ft_printf.c ft_chek_form.c
 
- CC = cc
+OBJ_S = $(SRC_F:.c=.o)
+HEADER = ft_printf.h
+CC = cc
 FLAGS = -Wall -Wextra -Werror 
+
 AR = ar rc
 RM = rm -f
 
@@ -12,9 +14,9 @@ RM = rm -f
 
 all : $(NAME)
 
- $(NAME) : $(OBJ_S)
+$(NAME) : $(OBJ_S)
 
-%.o : %.c $(HEADER)
+%.o: %.c $(HEADER)
 	$(CC) $(FLAGS) -c $< -o $@
 	$(AR) $(NAME) $@
 
@@ -24,11 +26,4 @@ clean :
 fclean : clean
 	$(RM) $(NAME)
 
-
- re : fclean all
-
-
- 
-
-
-
+re : fclean all
