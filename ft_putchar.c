@@ -6,13 +6,13 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:38:42 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/24 17:56:43 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:20:11 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "ft_printf.h"
+#include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
