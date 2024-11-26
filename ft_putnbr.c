@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:40:40 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/25 12:22:59 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/26 18:40:51 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 int	ft_putnbr(int n)
 {
+	long nb;
 	int	count;
 
 	count = 0;
-	if (n < 0)
+	nb = n;
+	if (nb < 0)
 	{
 		count += ft_putchar('-');
-		n = -n;
+		nb = -nb;
 	}
-	if (n >= 10)
-		count += ft_putnbr(n / 10);
-	count += ft_putchar(n % 10 + '0');
+	if (nb > 9)
+		count += ft_putnbr(nb / 10);
+	count += ft_putchar(nb % 10 + '0');
 	return (count);
 }

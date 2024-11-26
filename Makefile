@@ -5,7 +5,7 @@ SRC_F = ft_putchar.c ft_puthex.c ft_putnbr.c ft_putstr.c ft_unsigned_putnbr.c  f
 OBJ_S = $(SRC_F:.c=.o)
 HEADER = ft_printf.h
 CC = cc
-FLAGS = -Wall -Wextra -Werror 
+FLAGS = -Wall -Wextra -Werror
 
 AR = ar rc
 RM = rm -f

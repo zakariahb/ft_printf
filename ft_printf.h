@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 11:09:33 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/25 12:21:17 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/26 19:17:26 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_putchar(char c);
 int	ft_putstr(char *str);
 int	ft_putnbr(int n);
 int	ft_unsigned_putnbr(unsigned int n);
-int	ft_puthex(unsigned int n, char format);
+int	ft_puthex(unsigned long n, int format);
 int	ft_chek_form(int i, va_list p);
 int	ft_printf(const char *form, ...);
 
