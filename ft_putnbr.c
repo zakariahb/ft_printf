@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:40:40 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/26 18:40:51 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/27 05:21:34 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_putnbr(int n)
 {
-	long nb;
-	int	count;
+	long	nb;
+	int		count;
 
 	count = 0;
 	nb = n;

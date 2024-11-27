@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 10:08:13 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/26 18:43:36 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/27 09:33:09 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_printf(const char *form, ...)
 	va_start (p, form);
 	i = 0;
 	total = 0;
-	if (write(1,0,0) == -1)
-		return (-1);
 	while (form[i])
 	{
 		if (form[i] == '%')

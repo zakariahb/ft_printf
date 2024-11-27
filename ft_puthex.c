@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:49:09 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/26 18:41:45 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/27 11:04:07 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ int	ft_puthex(unsigned long n, int format)
 	char	*base;
 
 	count = 0;
-	
 	if (format == 'X')
-
 		base = "0123456789ABCDEF";
 	else
 		base = "0123456789abcdef";

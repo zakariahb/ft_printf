@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:39:54 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/26 15:05:44 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/26 19:30:54 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,13 @@
 int	ft_putstr(char *str)
 {
 	int	count;
-	int	i;
 
 	count = 0;
-	i = 0;
 	if (!str)
 		return (ft_putstr("(null)"));
-	while (str[i])
+	while (*str)
 	{
-		count += ft_putchar(str[i]);
-		i++;
+		count += ft_putchar(*str++);
 	}
 	return (count);
 }
