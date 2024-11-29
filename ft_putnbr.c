@@ -6,24 +6,26 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:40:40 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/29 09:48:43 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/29 10:07:53 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putnbr(long n)
+int	ft_putnbr(int n)
 {
 	int		count;
+	long	nb;
 
 	count = 0;
-	if (n < 0)
+	nb = n;
+	if (nb < 0)
 	{
 		count += ft_putchar('-');
-		n = -n;
+		nb = -nb;
 	}
-	if (n > 9)
-		count += ft_putnbr(n / 10);
-	count += ft_putchar(n % 10 + '0');
+	if (nb > 9)
+		count += ft_putnbr(nb / 10);
+	count += ft_putchar(nb % 10 + '0');
 	return (count);
 }
