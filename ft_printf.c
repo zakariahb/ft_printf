@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 10:08:13 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/27 09:33:09 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/11/29 10:49:41 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_printf(const char *form, ...)
 	int		i;
 	int		total;
 
+	if (write(1, 0, 0) == -1)
+		return (-1);
 	va_start (p, form);
 	i = 0;
 	total = 0;

@@ -15,11 +15,10 @@ RM = rm -f
 all : $(NAME)
 
 $(NAME) : $(OBJ_S)
-	$(AR) $(NAME) $^
 
 %.o: %.c $(HEADER)
 	$(CC) $(FLAGS) -c $< -o $@
-
+	$(AR) $(NAME) $@
 clean :
 	$(RM) $(OBJ_S)
 
