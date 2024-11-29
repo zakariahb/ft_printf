@@ -15,7 +15,7 @@ RM = rm -f
 all : $(NAME)
 
 $(NAME) : $(OBJ_S)
-	$(AR) $(NAME) $<
+	$(AR) $(NAME) $^
 
 %.o: %.c $(HEADER)
 	$(CC) $(FLAGS) -c $< -o $@
