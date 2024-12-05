@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 10:08:13 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/29 10:49:41 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/12/04 12:04:18 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,11 @@ int	ft_printf(const char *form, ...)
 	{
 		if (form[i] == '%')
 		{
-			total += ft_chek_form(form[i + 1], p);
-			i++;
+			if (form[i + 1])
+			{
+				total += ft_chek_form(form[i + 1], p);
+				i++;
+			}
 		}
 		else
 			total += ft_putchar(form[i]);

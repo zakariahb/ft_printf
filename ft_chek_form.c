@@ -6,7 +6,7 @@
 /*   By: zalaksya <zalaksya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:17:04 by zalaksya          #+#    #+#             */
-/*   Updated: 2024/11/29 10:06:47 by zalaksya         ###   ########.fr       */
+/*   Updated: 2024/12/04 11:58:57 by zalaksya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ int	ft_chek_form(int i, va_list p)
 		count += ft_putstr("0x");
 		count += ft_puthex(va_arg(p, unsigned long), 'x');
 	}
-	else if (i == '%')
-		count += ft_putchar('%');
 	else
 		count += ft_putchar(i);
 	return (count);
